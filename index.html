@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .left {
+            font-size: x-large;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: rgb(55, 34, 46);
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: wheat;
+        }
+        nav ul li a:hover {
+            color: rgb(169, 152, 120);
+            font-size: 1.02rem;
+        }
+
+        body {
+            /* background-color: rgb(37, 37, 93); */
+            background-color: rgb(18, 18, 42);
+            color: wheat;
+            font-family: 'Young Serif', serif;
+
+        }
+
+        .firstSection {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 80px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+
+            font-size: 2.8rem;
+
+        }
+
+        .rightsection img {
+            width: 110%;
+            margin: 30px 0;
+
+        }
+
+        .purple {
+            color: rgb(85, 121, 188);
+        }
+       #element {
+        color: rgb(85, 121, 188);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li> <a href=""> HOME</a></li>
+                    <LI> <a href=""> ABOUT</a></LI>
+                    <LI> <a href=""> SERVICES</a></LI>
+                    <LI> <a href=""> PROJECTS</a></LI>
+                    <LI> <a href=""> CONTACT ME</a></LI>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+
+            <div class="leftsection">
+                Hi my name is <span class="purple">
+                    Gurnoor
+                </span>
+                <div>WE THE BEST MUSIC</div>
+                <!-- <div>MUSIC</div> -->
+                <span id="element"></span>
+
+            </div>
+            <div class="rightsection">
+                <img src="BG.png">
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'UI/UX Designer','bhoru'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+
+</html>
