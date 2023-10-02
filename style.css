@@ -28,11 +28,25 @@ nav ul li {
 }
 nav ul li a {
     text-decoration: none;
-    color: wheat;
+    color: #f5deb3;
+    position: relative;
 }
 nav ul li a:hover {
-    color: rgb(169, 152, 120);
+    color: #0B8A92;
     font-size: 1.02rem;
+}
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f5deb3 ;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
 }
 
 body {
