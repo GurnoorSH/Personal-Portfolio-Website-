@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d0a186f67e.js" crossorigin="anonymous"></script>
     <style>
-       
+
     </style>
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="left"> Portfolio</div>
+            <div class="left">Gurnoor's Portfolio</div>
             <div class="right">
                 <ul>
                     <li> <a href=""> HOME</a></li>
@@ -34,23 +35,52 @@
                 Hi my name is <span class="purple">
                     Gurnoor
                 </span>
-                <div>WE THE MUSIC</div>
+                <div>WE THE BEST MUSIC</div>
                 <!-- <div>MUSIC</div> -->
                 <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
 
             </div>
             <div class="rightsection">
                 <img src="./bg.png" alt="cool image ">
             </div>
         </section>
+        <hr>
+        <!-- contact ....................... -->
+        <div class="contact">
+            <div class="left">
+                <div> </i>Contact Me</div>
+                <p><i class="fa-solid fa-paper-plane" style="color: wheat;"></i>gurnoor1523@gmail.com</p>
+                <p><i class="fa-brands fa-phoenix-framework" style="color: wheat;"></i>9780444913</p>
+                <div class="icons">
+                    <a href=""><i class="fa-brands fa-linkedin" style="color: rgb(255, 242, 216);"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram" style="color: rgb(255, 242, 216);"></i></a>
+                    <a href=""><i class="fa-brands fa-github" style="color: rgb(255, 242, 216);"></i></a>
+                </div>
+            </div>
+            <div class="right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <!-- <input type="text" name="Name" placeholder="Your Name" required> -->
+                    <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+        </div>
     </main>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-          strings: ['Web Developer', 'UI/UX Designer','Video Editor'],
-          typeSpeed: 50,
+            strings: ['Web Developer', 'UI/UX Designer', 'Video Editor'],
+            typeSpeed: 50,
         });
-      </script>
+    </script>
+
 </body>
 
 </html>

@@ -26,26 +26,30 @@ nav ul li {
     list-style: none;
     margin: 0 23px;
 }
+
 nav ul li a {
     text-decoration: none;
     color: #f5deb3;
     position: relative;
 }
+
 nav ul li a:hover {
-    color: #0B8A92;
+    color: rgb(171, 150, 111);
     font-size: 1.02rem;
 }
+
 nav ul li a::after {
     content: '';
     width: 0%;
     height: 2px;
-    background: #f5deb3 ;
+    background: #f5deb3;
     position: absolute;
     left: 0;
     bottom: -6px;
     transition: 0.5s;
 }
-nav ul li a:hover::after{
+
+nav ul li a:hover::after {
     width: 100%;
 }
 
@@ -61,7 +65,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 80px 0;
+    margin: 90px 0;
 }
 
 .firstSection>div {
@@ -74,6 +78,19 @@ body {
 
 }
 
+.leftsection .btn {
+    background: #12122a;
+    color: #f1e6d1;
+    border: 2px solid;
+    border-radius: 9px;
+    padding: 12px;
+    font-size: 14px;
+    margin-top: 36px;
+
+
+}
+
+
 .rightsection img {
     width: 110%;
     margin: 30px 0;
@@ -83,6 +100,46 @@ body {
 .purple {
     color: rgb(85, 121, 188);
 }
+
 #element {
-color: rgb(85, 121, 188);
+    color: rgb(85, 121, 188);
+}
+
+main hr {
+    border: 0;
+    background-color: #5579bc;
+    height: 1px;
+    margin: 40px 84px;
+}
+
+.contact  {
+    display: flex;
+}
+
+.contact .left p{
+   margin-top: 30 px ;
+
+}
+.contact .right {
+    /* flex-basis: 60%; */
+    margin: 20px 50px;
+}
+
+
+
+form input , form textarea{
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    margin: 15px;
+    font-size: 18px;
+    border-radius: 6px;
+    background-color: #262656;
+    color: wheat;
+
+
+}
+
+.contact .left p i {
+    margin-right: 10px;
 }
