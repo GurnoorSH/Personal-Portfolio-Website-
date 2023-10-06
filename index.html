@@ -7,6 +7,8 @@
     <title>Dev Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/d0a186f67e.js" crossorigin="anonymous"></script>
+
+
     <style>
 
     </style>
@@ -52,7 +54,7 @@
         <!-- contact ....................... -->
         <div class="contact">
             <div class="left">
-                <div> </i>Contact Me</div>
+                <h1>Contact Me</h1>
                 <p><i class="fa-solid fa-paper-plane" style="color: wheat;"></i>gurnoor1523@gmail.com</p>
                 <p><i class="fa-brands fa-phoenix-framework" style="color: wheat;"></i>9780444913</p>
                 <div class="icons">
@@ -60,25 +62,58 @@
                     <a href=""><i class="fa-brands fa-instagram" style="color: rgb(255, 242, 216);"></i></a>
                     <a href=""><i class="fa-brands fa-github" style="color: rgb(255, 242, 216);"></i></a>
                 </div>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
             </div>
             <div class="right">
-                <form action="">
+                <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
                     <!-- <input type="text" name="Name" placeholder="Your Name" required> -->
                     <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                    <button type="submit">Submit</button>
+                    <!-- <button type="submit">Submit</button> -->
+                    <div class="buttons">
+                        <button type="submit" class="btn" style="margin: 11px 45px" ;> SUBMIT </button>
                 </form>
+                <span id="msg"></span>
             </div>
 
+
         </div>
+
+
     </main>
+    <div class="copyright">
+        <p><i class="fa-regular fa-copyright" style="color: #1a4ca2;"></i> COPYRIGHT GURNOOR SINGH Copy Krlo Koini </p>
+
+    </div>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
             strings: ['Web Developer', 'UI/UX Designer', 'Video Editor'],
             typeSpeed: 50,
         });
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby05RTt-fV3_vX7e46OCat71aiI6WOrd1W0nzaXwzCYrLSXTCqLmZQacjZ7K_aHqTUWaw/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response =>{
+                    msg.innerHTML="Message Sent Successfully"
+                    setTimeout(function(){
+                        msg.innerHTML=""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
     </script>
 
 </body>
