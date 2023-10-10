@@ -224,6 +224,12 @@ form textarea {
 
 }
 
+.project {
+    FONT-SIZE: 45PX;
+MARGIN: 0PX 122PX;
+PADDING: 23PX;
+}
+ 
 /* -----------------------SMALL SCREEN -------------- */
 /* @media ONLY SCREEN AND (MAX-WIdTH: 600PX){
    
