@@ -200,6 +200,12 @@ form textarea {
     margin: 15px 79px;
 }
 
+header nav ul li a {
+    /* color: #98999a; */
+    text-decoration: none;
+    transition: all ease 0.5s;
+  }
+  
 
 
 .copyright {
